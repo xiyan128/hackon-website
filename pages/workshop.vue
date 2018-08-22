@@ -1,9 +1,8 @@
 <template>
   <div >
     <section> 
-      <v-parallax src="/workshop.png" height="464">
+      <v-parallax src="/workshop.webp" height="464">
         <v-layout column align-center justify-center class="white--text">
-          <!-- <img src="/v.png" alt="Vuetify.js" height="200"> -->
          <h1 class="white--text mb-2 display-2 text-xs-center font-weight-black">工作坊</h1>
           <div class="subheading mb-3 text-xs-center">专家助力，指点迷津</div>
           <v-btn class="red darken-3 lighten-2 mt-5" dark large href="/pre-made-themes">
