@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <v-parallax src="/index-2.png" height="600">
+      <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/9f0d8420fa6331e43f4f.png" height="600">
         <v-layout column align-center justify-center class="white--text">
          <h1 class="white--text mb-2 display-2 text-xs-center font-weight-black">Hack_on</h1>
           <div class="subheading mb-3 text-xs-center">属于中学生的Hackathon，年轻极客们的狂欢</div>
@@ -79,7 +79,7 @@
     </section>
 
     <section>
-      <v-parallax src="/index-1.png" height="380">
+      <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/2df1cc15396e13350fc5.png" height="380">
         <v-layout column align-center justify-center class="white--text">
           <div class="headline white--text mb-3 text-xs-center">与同龄的计算机精英们随机组队</div>
           <em>这可能是你和各校大佬们相识的第一步</em>

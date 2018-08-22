@@ -11,7 +11,13 @@ import {
   VGrid,
   VToolbar,
   VDivider,
-  VParallax
+  VParallax,
+  VTextfield,
+  VSelect,
+  VForm,
+  VCheckbox,
+  VTextarea,
+  VAlert
 } from 'vuetify'
 
 Vue.use(Vuetify, {
@@ -26,6 +32,12 @@ Vue.use(Vuetify, {
     VGrid,
     VToolbar,
     VDivider,
-    VParallax
+    VParallax,
+    VTextfield,
+    VSelect,
+    VForm,
+    VCheckbox,
+    VTextarea,
+    VAlert
   }
 })
