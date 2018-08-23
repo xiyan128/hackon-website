@@ -34,11 +34,7 @@
                     <div class="headline text-xs-center">赛前，工作坊助力</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus
-                    et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum
-                    tincidunt. Suspendisse potenti.Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus
-                    et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum
-                    tincidunt. Suspendisse potenti.
+                    除了最终的比赛，活动还包括赛前开设的工作坊。我们将聘请一些业界知名的讲师来为选手做赛前的培训。它可以为或许是初学者的你解惑，能接触到一些前沿的科技，胸有成竹地参加比赛。又或许能为原本就是大佬的你铺平通向「神级」的道路，确保你能在赛中稳拿名次。<a href="/workshop" class="blue--text">了解更多</a>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -51,9 +47,7 @@
                     <div class="headline">赛中，专家全程支持</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus
-                    et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum
-                    tincidunt. Suspendisse potenti.
+                    本活动受到了浙江省科协的积极支持。届时，技术专家将全程在场为提供必要的技术支持，这也将是选手们学习进步的一大助力。本次 Hackathon 采用无命题制，将鼓励开发者从多角度去发挥来实现自己的创意，而专家的指点也必将使大家的创意变身为现实。
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -66,9 +60,7 @@
                     <div class="headline text-xs-center">赛后，惊人的奖励</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus
-                    et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum
-                    tincidunt. Suspendisse potenti.
+                    虽然这是一场纯公益的比赛，以友好的技术交流作为比赛的出发点，组委会仍以筹款和接受无偿赞助的方式积累了一笔客观的资金，除去必要的开销外将全部投入奖池，以奖励获奖的队伍。比赛末评委将选出一、二、三奖，具体名额和奖品待定，但绝不会亏待各位的努力。
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -99,7 +91,7 @@
                 <div class="headline">关于我们</div>
               </v-card-title>
               <v-card-text>
-                我们来自杭州不同的高中，因为共同的热爱相聚在了一起。Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum tincidunt. Suspendisse potenti.
+                我们来自杭州不同的高中，因为共同的热爱相聚在了一起。从比赛立项伊始，所有的联络、宣传、筹备等工作皆由我们独立、无偿地完成。Hack_on是杭州地区的第一个此类 Hackathon 活动。我们作为杭州地区的此类活动的开始，将以全心的努力付诸于比赛的准备--一切的一切都是为了比赛能如期举行、完满落幕。(所以求您<a href="/register" class="blue--text">参个赛</a>吧 Orz)
               </v-card-text>
             </v-card>
           </v-flex>

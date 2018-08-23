@@ -8,8 +8,8 @@
           <v-btn class="red darken-3 mt-5" dark large nuxt to="/register">
             报名参赛即可免费参加
           </v-btn>
-          <v-btn class="blue darken-3 mt-5" dark nuxt to="/register" disabled>
-            观看视频「暂未开放」
+          <v-btn class="blue darken-3 mt-5" dark @click="$vuetify.goTo('#videos')">
+            观看录像
             <v-icon right dark>theaters</v-icon>
           </v-btn>
         </v-layout>
@@ -30,9 +30,7 @@
                     <div class="headline text-xs-center">设立目的</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus
-                    et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum
-                    tincidunt. Suspendisse potenti.
+                    我们将聘请一些业界知名的讲师来为选手提供工作坊形式的培训。它可以为初学者解惑，使所有人都能接触到一些前沿的科技，胸有成竹地参加比赛。也能为大佬铺平通向「神级」的道路，探索更高级的技术。
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -45,9 +43,7 @@
                     <div class="headline text-xs-center">如何参与</div>
                   </v-card-title>
                   <v-card-text>
-                    Cras facilisis mi vitae nunc lobortis pharetra. Nulla volutpat tincidunt ornare. Pellentesque habitant morbi tristique senectus
-                    et netus et malesuada fames ac turpis egestas. Nullam in aliquet odio. Aliquam eu est vitae tellus bibendum
-                    tincidunt. Suspendisse potenti.
+                    参加无额外条件，无需费用，只需报参赛时勾上一个「有意向」的选项即可。若实在无法到达现场体验最佳的互动授课，我们还提供线上的回放，您可以随时观看。
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -59,32 +55,9 @@
                   <v-card-title primary-title class="layout justify-center">
                     <div class="headline">研学主题</div>
                   </v-card-title>
-                  <v-list class="transparent">
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="blue--text text--lighten-2">code</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>Web 全栈开发 —— HTML5, CSS3, JS...</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="blue--text text--lighten-2">explore</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>数据采集 —— Scrapy, PhantomJS...</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                    <v-list-tile>
-                      <v-list-tile-action>
-                        <v-icon class="blue--text text--lighten-2">settings_input_component</v-icon>
-                      </v-list-tile-action>
-                      <v-list-tile-content>
-                        <v-list-tile-title>Raspbarry Pi —— 开源硬件, Python...</v-list-tile-title>
-                      </v-list-tile-content>
-                    </v-list-tile>
-                  </v-list>
+                  <v-card-text>
+                    主题一：<b>Arduino</b> <br> 一类便捷灵活、方便上手的开源电子原型平台，包含硬件 (各种型号的 arduino 板) 和软件 (arduino IDE)。她不仅适用于工程师进行快速原型开发，也同样适用于艺术家、设计师、爱好者和对于 “互动” 有兴趣的朋友们。同时他几乎是现代创客必备的工具。
+                  </v-card-text>
                 </v-card>
               </v-flex>
             </v-layout>
@@ -92,22 +65,21 @@
         </v-flex>
       </v-layout>
     </section>
-    <section>
-      <v-layout class="pb-5">
+    <section id="videos">
+      <v-layout>
         <v-flex xs12 sm10 offset-sm1 lg10 offset-lg1>
+        <div class="headline text-xs-center" style="width:100%">视频回放</div>
+        <div class="subheading pb-3 text-xs-center" style="width:100%">将会持续更新</div>
         <v-select
           :items="Object.keys(sources)"
           label="选择视频"
+          hint="此处可以选择视频"
           solo
-          auto
           v-model="currentSource"
         ></v-select>
-          <v-card :height="videoHeight">
-              <video :src="sources[currentSource]" controls="controls" style="height: 100%; width: 100% "></video>
-          </v-card>
+        <video :src="sources[currentSource]" controls="controls" style="width: 100% "></video>
         </v-flex>
       </v-layout>
-
     </section>
   </div>
 </template>
@@ -123,18 +95,7 @@
           'Fourth': 'http://lc-yh97DhYm.cn-n1.lcfile.com/1cc8d1e0640b2c0ed1b5.mp4',
           'Fifth': 'http://lc-yh97DhYm.cn-n1.lcfile.com/417ff784468bc9434387.mp4'
         },
-        currentSource: 'First'
-      }
-    },
-    computed: {
-      videoHeight () {
-        switch (this.$vuetify.breakpoint.name) {
-          case 'xs': return '220px'
-          case 'sm': return '300px'
-          case 'md': return '500px'
-          case 'lg': return '600px'
-          case 'xl': return '800px'
-        }
+        currentSource: null
       }
     }
 
