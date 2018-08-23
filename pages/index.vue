@@ -5,7 +5,7 @@
         <v-layout column align-center justify-center class="white--text">
          <h1 class="white--text mb-2 display-2 text-xs-center font-weight-black">Hack_on</h1>
           <div class="subheading mb-3 text-xs-center">属于中学生的Hackathon，年轻极客们的狂欢</div>
-          <v-btn class="red darken-3 lighten-2 mt-5" dark large href="/pre-made-themes">
+          <v-btn class="red darken-3 lighten-2 mt-5" dark large nuxt to="/register">
             为梦想而参赛!
           </v-btn>
         </v-layout>
@@ -83,7 +83,7 @@
         <v-layout column align-center justify-center class="white--text">
           <div class="headline white--text mb-3 text-xs-center">与同龄的计算机精英们随机组队</div>
           <em>这可能是你和各校大佬们相识的第一步</em>
-          <v-btn class="red darken-3 lighten-2 mt-5" dark large href="/pre-made-themes">
+          <v-btn class="red darken-3 lighten-2 mt-5" dark large nuxt to="/register">
             为团队而战!
           </v-btn>
         </v-layout>
