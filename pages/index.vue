@@ -4,7 +4,7 @@
       <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/9f0d8420fa6331e43f4f.png" height="600">
         <v-layout column align-center justify-center class="white--text">
          <h1 class="white--text mb-2 display-2 text-xs-center font-weight-black">Hack_on</h1>
-          <div class="subheading mb-3 text-xs-center">属于中学生的Hackathon，年轻极客们的狂欢</div>
+          <div class="subheading mb-3 text-xs-center">属于中学生的Hackathon<br>年轻极客们的狂欢</div>
           <v-btn class="red darken-3 lighten-2 mt-5" dark large nuxt to="/register">
             为梦想而参赛!
           </v-btn>
@@ -60,7 +60,7 @@
                     <div class="headline text-xs-center">赛后，惊人的奖励</div>
                   </v-card-title>
                   <v-card-text>
-                    虽然这是一场纯公益的比赛，以友好的技术交流作为比赛的出发点，组委会仍以筹款和接受无偿赞助的方式积累了一笔客观的资金，除去必要的开销外将全部投入奖池，以奖励获奖的队伍。比赛末评委将选出一、二、三奖，具体名额和奖品待定，但绝不会亏待各位的努力。
+                    虽然这是一场纯公益的比赛，以友好的技术交流作为比赛的出发点，组委会仍以筹款和接受无偿赞助的方式积累了一笔客观的资金，除去必要的开销外将全部投入奖池，以奖励获奖的队伍。评委将选出一、二、三奖，具体名额和奖品待定，但绝不会亏待各位的努力。
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -106,10 +106,10 @@
               <v-list class="transparent">
                 <v-list-tile>
                   <v-list-tile-action>
-                    <v-icon class="blue--text text--lighten-2">phone</v-icon>
+                    <v-icon class="green--text text--lighten-2">people</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>777-867-5309</v-list-tile-title>
+                    <v-list-tile-title>微信公众号：HACKON</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
                 <v-list-tile>
@@ -125,7 +125,7 @@
                     <v-icon class="blue--text text--lighten-2">email</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>john@vuetifyjs.com</v-list-tile-title>
+                    <v-list-tile-title>xiyan128@gmail.com</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
               </v-list>
