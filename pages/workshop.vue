@@ -1,7 +1,7 @@
 <template>
   <div>
     <section>
-      <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/631e0b84bdf74b30ded3.png" height="464">
+      <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/631e0b84bdf74b30ded3.png" :height="windowSize.y-64">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-2 text-xs-center font-weight-black">工作坊</h1>
           <div class="subheading mb-3 text-xs-center">专家助力，指点迷津</div>
@@ -89,14 +89,25 @@
     data () {
       return {
         sources: {
-          'First': 'http://lc-yh97dhym.cn-n1.lcfile.com/ddd54950f1e6bf0f5e0e.mp4',
-          'Second': 'http://lc-yh97DhYm.cn-n1.lcfile.com/7764e45f4290988da50d.mp4',
-          'Third': 'http://lc-yh97DhYm.cn-n1.lcfile.com/cc77f1304f3047f15959.mp4',
-          'Fourth': 'http://lc-yh97DhYm.cn-n1.lcfile.com/1cc8d1e0640b2c0ed1b5.mp4',
-          'Fifth': 'http://lc-yh97DhYm.cn-n1.lcfile.com/417ff784468bc9434387.mp4'
+          '预告': 'http://lc-yh97dhym.cn-n1.lcfile.com/b744c891502befaeaf05.mov'
         },
-        currentSource: null
+        currentSource: '预告',
+        windowSize: {
+          x: 0,
+          y: 0
+        }
       }
+    },
+    methods: {
+      onResize () {
+        this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+      }
+    },
+    mounted () {
+      this.onResize()
+      // To refresh the page (not a decent approach )
+      window.scrollTo(0, 1)
+      window.scrollTo(0, 0)
     }
 
   }

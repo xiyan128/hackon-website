@@ -1,10 +1,10 @@
 <template>
   <div>
     <section>
-      <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/9f0d8420fa6331e43f4f.png" height="600">
+      <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/9f0d8420fa6331e43f4f.png" :height="windowSize.y-64">
         <v-layout column align-center justify-center class="white--text">
          <h1 class="white--text mb-2 display-2 text-xs-center font-weight-black">Hack_on</h1>
-          <div class="subheading mb-3 text-xs-center">属于中学生的Hackathon<br>年轻极客们的狂欢</div>
+          <em class="subheading mb-3 text-xs-center">属于中学生的Hackathon<br>年轻极客们的狂欢</em>
           <v-btn class="red darken-3 lighten-2 mt-5" dark large nuxt to="/register">
             为梦想而参赛!
           </v-btn>
@@ -106,7 +106,7 @@
               <v-list class="transparent">
                 <v-list-tile>
                   <v-list-tile-action>
-                    <v-icon class="green--text text--lighten-2">people</v-icon>
+                    <v-icon class="green--text">people</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
                     <v-list-tile-title>微信公众号：HACKON</v-list-tile-title>
@@ -114,7 +114,7 @@
                 </v-list-tile>
                 <v-list-tile>
                   <v-list-tile-action>
-                    <v-icon class="blue--text text--lighten-2">place</v-icon>
+                    <v-icon class="red--text">place</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
                     <v-list-tile-title>浙江, 杭州</v-list-tile-title>
@@ -122,10 +122,10 @@
                 </v-list-tile>
                 <v-list-tile>
                   <v-list-tile-action>
-                    <v-icon class="blue--text text--lighten-2">email</v-icon>
+                    <i class="blue--text">QQ</i>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>xiyan128@gmail.com</v-list-tile-title>
+                    <v-list-tile-title>1910357534</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
               </v-list>
@@ -136,3 +136,27 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  data: () => ({
+    windowSize: {
+      x: 0,
+      y: 0
+    }
+  }),
+
+  methods: {
+    onResize () {
+      this.windowSize = { x: window.innerWidth, y: window.innerHeight }
+    }
+  },
+  mounted () {
+    this.onResize()
+    // To refresh the page (not a decent approach )
+    window.scrollTo(0, 1)
+    window.scrollTo(0, 0)
+  }
+}
+</script>
+
