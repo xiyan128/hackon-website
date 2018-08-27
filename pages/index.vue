@@ -127,10 +127,18 @@
                 </v-list-tile>
                 <v-list-tile>
                   <v-list-tile-action>
-                    <i class="blue--text">QQ</i>
+                    <v-icon class="blue--text">email</v-icon>
                   </v-list-tile-action>
                   <v-list-tile-content>
-                    <v-list-tile-title>1910357534</v-list-tile-title>
+                    <v-list-tile-title>1910357534@qq.com</v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+                <v-list-tile>
+                  <v-list-tile-action>
+                    <v-icon class="blue--text">local_phone</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title>13336086333</v-list-tile-title>
                   </v-list-tile-content>
                 </v-list-tile>
               </v-list>
@@ -148,13 +156,20 @@
         <v-card-text>
           <v-layout align-center justify-center :column="$vuetify.breakpoint.xsOnly" fill-height>
             <v-flex>
-              <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/e5fdf9a428d6d022b646.png" class="logo">
-            </v-flex>
-            <v-flex>
               <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/dacaf817b434bf600cd6.png" class="logo">
             </v-flex>
             <v-flex>
               <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/2a1a21c5271eef791dae.png" class="logo">
+            </v-flex>
+          </v-layout>
+        </v-card-text>
+                <v-card-title primary-title class="layout justify-center">
+          <div class="headline">合作社区</div>
+        </v-card-title>
+        <v-card-text>
+          <v-layout align-center justify-center :column="$vuetify.breakpoint.xsOnly" fill-height>
+            <v-flex>
+              <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/e5fdf9a428d6d022b646.png" class="logo">
             </v-flex>
           </v-layout>
         </v-card-text>
