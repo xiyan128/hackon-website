@@ -12,7 +12,7 @@
               <v-text-field v-model="school" :rules="schoolRules" label="学校" required></v-text-field>
               <v-text-field v-model="phoneNums" :rules="phoneRules" label="手机号" required></v-text-field>
               <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
-              <v-text-field v-model="qq" label="QQ/微信"></v-text-field>
+              <v-text-field v-model="qq" :rules="[v => !!v || '请填写你的QQ号']" label="QQ"></v-text-field>
               <v-select v-model="role" :items="roles" :rules="[v => !!v || '请选择你的角色']" label="角色" required></v-select>
               <v-textarea auto-grow v-model="intro" :rules="introRules" label="个人简介" placeholder="eg：我擅长Android、iOS、web前后端开发，精通C++、Java、Python、汇编等语言。现役oi选手。" required></v-textarea>
               <v-checkbox v-model="workshop" label="有意向参加免费提供的工作坊？名额有限，抢完即止。" required></v-checkbox>
