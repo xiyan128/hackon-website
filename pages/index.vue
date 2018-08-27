@@ -3,8 +3,9 @@
     <section>
       <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/9f0d8420fa6331e43f4f.png" :height="windowSize.y-64">
         <v-layout column align-center justify-center class="white--text">
-         <h1 class="white--text mb-2 display-2 text-xs-center font-weight-black">Hack_on</h1>
-          <em class="subheading mb-3 text-xs-center">属于中学生的Hackathon<br>年轻极客们的狂欢</em>
+          <h1 class="white--text mb-2 display-2 text-xs-center font-weight-black">Hack_on</h1>
+          <em class="subheading mb-3 text-xs-center">属于中学生的Hackathon
+            <br>年轻极客们的狂欢</em>
           <v-btn class="red darken-3 lighten-2 mt-5" dark large nuxt to="/register">
             为梦想而参赛!
           </v-btn>
@@ -34,7 +35,9 @@
                     <div class="headline text-xs-center">赛前，工作坊助力</div>
                   </v-card-title>
                   <v-card-text>
-                    除了最终的比赛，活动还包括赛前开设的工作坊。我们将聘请一些业界知名的讲师来为选手做赛前的培训。它可以为或许是初学者的你解惑，能接触到一些前沿的科技，胸有成竹地参加比赛。又或许能为原本就是大佬的你铺平通向「神级」的道路，确保你能在赛中稳拿名次。<a href="/workshop" class="blue--text">了解更多</a>
+                    除了最终的比赛，活动还包括赛前开设的工作坊。我们将聘请一些业界知名的讲师来为选手做赛前的培训。它可以为或许是初学者的你解惑，能接触到一些前沿的科技，胸有成竹地参加比赛。又或许能为原本就是大佬的你铺平通向「神级」的道路，确保你能在赛中稳拿名次。
+                    <a
+                      href="/workshop" class="blue--text">了解更多</a>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -91,7 +94,9 @@
                 <div class="headline">关于我们</div>
               </v-card-title>
               <v-card-text>
-                我们来自杭州不同的高中，因为共同的热爱相聚在了一起。从比赛立项伊始，所有的联络、宣传、筹备等工作皆由我们独立、无偿地完成。Hack_on是杭州地区的第一个此类 Hackathon 活动。我们作为杭州地区的此类活动的开始，将以全心的努力付诸于比赛的准备--一切的一切都是为了比赛能如期举行、完满落幕。(所以求您<a href="/register" class="blue--text">参个赛</a>吧 Orz)
+                我们来自杭州不同的高中，因为共同的热爱相聚在了一起。从比赛立项伊始，所有的联络、宣传、筹备等工作皆由我们独立、无偿地完成。Hack_on是杭州地区的第一个此类 Hackathon 活动。我们作为杭州地区的此类活动的开始，将以全心的努力付诸于比赛的准备--一切的一切都是为了比赛能如期举行、完满落幕。(所以求您
+                <a
+                  href="/register" class="blue--text">参个赛</a>吧 Orz)
               </v-card-text>
             </v-card>
           </v-flex>
@@ -133,6 +138,27 @@
           </v-flex>
         </v-layout>
       </v-container>
+    </section>
+
+    <section>
+      <v-card flat tile class="grey darken-4 text-xs-center p mx-0" style="width:100%">
+        <v-card-title primary-title class="layout justify-center">
+          <div class="headline">赞助鸣谢</div>
+        </v-card-title>
+        <v-card-text>
+          <v-layout align-center justify-center :column="$vuetify.breakpoint.xsOnly" fill-height>
+            <v-flex>
+              <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/e5fdf9a428d6d022b646.png" class="logo">
+            </v-flex>
+            <v-flex>
+              <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/dacaf817b434bf600cd6.png" class="logo">
+            </v-flex>
+            <v-flex>
+              <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/2a1a21c5271eef791dae.png" class="logo">
+            </v-flex>
+          </v-layout>
+        </v-card-text>
+      </v-card>
     </section>
   </div>
 </template>
