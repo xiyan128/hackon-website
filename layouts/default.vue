@@ -15,6 +15,9 @@
         <v-btn flat nuxt to="workshop">
           工作坊
         </v-btn>
+        <v-btn flat nuxt to="finance">
+          财务公开
+        </v-btn>
       </v-toolbar-items>
     </v-toolbar>
 

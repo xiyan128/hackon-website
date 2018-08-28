@@ -19,7 +19,7 @@
             </v-form>
           </v-card-text>
           <v-card-actions>
-            <v-btn color="red darken-3" style="width:100%" @click.native="submit" :disabled="!valid">就这样</v-btn>
+            <v-btn color="green" style="width:100%" @click.native="submit" :disabled="!valid">就这样</v-btn>
           </v-card-actions>
           <v-alert :value="error" type="error" class="subheading">报名失败，请向组委会寻求帮助！</v-alert>
           <v-alert :value="success" type="success" class="subheading">报名成功</v-alert>

@@ -43,7 +43,8 @@
                     <div class="headline text-xs-center">如何参与</div>
                   </v-card-title>
                   <v-card-text>
-                    参加无额外条件，无需费用，只需报参赛时勾上一个「有意向」的选项即可。若实在无法到达现场体验最佳的互动授课，我们还提供线上的回放，您可以随时观看。
+                    参加无额外条件，无需费用，只需
+                    <a href="/register" class="blue--text">报名参赛</a>时勾上一个「有意向」的选项即可。若实在无法到达现场体验最佳的互动授课，我们还提供线上的回放，您可以随时观看。
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -56,7 +57,11 @@
                     <div class="headline">研学主题</div>
                   </v-card-title>
                   <v-card-text>
-                    主题一：<b>Arduino</b> <br> 一类便捷灵活、方便上手的开源电子原型平台，包含硬件 (各种型号的 arduino 板) 和软件 (arduino IDE)。她不仅适用于工程师进行快速原型开发，也同样适用于艺术家、设计师、爱好者和对于 “互动” 有兴趣的朋友们。同时他几乎是现代创客必备的工具。
+                    <ul>
+                      <li>物联网开发入门</li>
+                      <li>移动互联网应用开发</li>
+                      <li>产品设计与需求管理</li>
+                    </ul>
                   </v-card-text>
                 </v-card>
               </v-flex>
@@ -68,16 +73,10 @@
     <section id="videos">
       <v-layout>
         <v-flex xs12 sm10 offset-sm1 lg10 offset-lg1>
-        <div class="headline text-xs-center" style="width:100%">视频回放</div>
-        <div class="subheading pb-3 text-xs-center" style="width:100%">将会持续更新</div>
-        <v-select
-          :items="Object.keys(sources)"
-          label="选择视频"
-          hint="此处可以选择视频"
-          solo
-          v-model="currentSource"
-        ></v-select>
-        <video :src="sources[currentSource]" controls="controls" style="width: 100% "></video>
+          <div class="headline text-xs-center" style="width:100%">视频回放</div>
+          <div class="subheading pb-3 text-xs-center" style="width:100%">将会持续更新</div>
+          <v-select :items="Object.keys(sources)" label="选择视频" hint="此处可以选择视频" solo v-model="currentSource"></v-select>
+          <video :src="sources[currentSource]" controls="controls" style="width: 100% "></video>
         </v-flex>
       </v-layout>
     </section>
