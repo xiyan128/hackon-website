@@ -9,14 +9,14 @@
       <span class="subheading hidden-sm-and-down">高中生的 Hackathon · 杭州 · 2018 </span>
       <v-spacer></v-spacer>
       <v-toolbar-items>
-        <v-btn class="red darken-4" flat nuxt to="register">
-          参赛
-        </v-btn>
         <v-btn flat nuxt to="workshop">
           工作坊
         </v-btn>
-        <v-btn flat nuxt to="finance">
+        <v-btn flat nuxt to="finance" class="hidden-sm-and-down">
           财务公开
+        </v-btn>
+        <v-btn class="red darken-4" flat nuxt to="register">
+          参赛
         </v-btn>
       </v-toolbar-items>
     </v-toolbar>
@@ -27,8 +27,12 @@
 
     <v-footer height="auto">
       <v-card flat tile class="grey darken-4 text-xs-center p mx-0" style="width:100%">
+
         <v-card-text>
-          &copy;2018 —
+          <v-btn nuxt flat to="finance" class="blue--text">
+           「财务公开」
+          </v-btn>
+          <br/> &copy;2018 —
           <strong>Hack_on 组委会</strong>, made by
           <strong>Xiyan Shao</strong>
         </v-card-text>

@@ -14,7 +14,7 @@
               <v-text-field v-model="email" :rules="emailRules" label="E-mail" required></v-text-field>
               <v-text-field v-model="qq" :rules="[v => !!v || '请填写你的QQ号']" label="QQ"></v-text-field>
               <v-select v-model="role" :items="roles" :rules="[v => !!v || '请选择你的角色']" label="角色" required></v-select>
-              <v-textarea auto-grow v-model="intro" :rules="introRules" label="个人简介" placeholder="eg：我擅长Android、iOS、web前后端开发，精通C++、Java、Python、汇编等语言。现役oi选手。" required></v-textarea>
+              <v-textarea auto-grow v-model="intro" label="个人简介" placeholder="eg：我擅长Android、iOS、web前后端开发，精通C++、Java、Python、汇编等语言。现役oi选手。" required></v-textarea>
               <v-checkbox v-model="workshop" label="有意向参加免费提供的工作坊？名额有限，抢完即止。" required></v-checkbox>
             </v-form>
           </v-card-text>
@@ -65,10 +65,6 @@
           '其它'
         ],
         intro: '',
-        introRules: [
-          v => !!v || '务必介绍下自己',
-          v => (v && v.length >= 16) || '个人简介必须多于十六个字哦，可以着重介绍一下你的专攻方向'
-        ],
         workshop: false,
         error: false,
         success: false
