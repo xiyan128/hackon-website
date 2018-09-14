@@ -85,10 +85,12 @@
               <v-flex xs12>
                 <v-card class="elevation-0 transparent">
                   <v-card-title primary-title class="layout justify-center">
-                    <div class="headline text-xs-center">后续财务明细将在此处更新</div>
+                    <div class="headline text-xs-center">财务明细</div>
                   </v-card-title>
                   <v-card-text class="text-xs-center">
-                    ...
+                    <v-btn nuxt flat href="https://docs.qq.com/sheet/DUkhXakJ0VlRVSHZw" class="blue--text">
+                      点击查看
+                    </v-btn>
                   </v-card-text>
                 </v-card>
               </v-flex>
