@@ -4,8 +4,8 @@
       <v-parallax src="http://lc-yh97dhym.cn-n1.lcfile.com/9f0d8420fa6331e43f4f.png" :height="windowSize.y-64">
         <v-layout column align-center justify-center class="white--text">
           <h1 class="white--text mb-2 display-3 text-xs-center font-weight-black">Hack_on</h1>
-          <em class="subheading mb-3 text-xs-center">属于中学生的Hackathon
-            <br>年轻极客们的狂欢</em>
+          <em class="subheading mb-3 text-xs-center">2018.10.13-14
+            <br>凤起路580号，杭十四中</em>
           <v-btn class="red darken-3 lighten-2 mt-5" dark large nuxt to="/register">
             为梦想而参赛!
           </v-btn>
