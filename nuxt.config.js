@@ -29,7 +29,6 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    publicPath: 'http://shaoxiyan.github.io/hackon-website/_nuxt/',
     babel: {
       plugins: [
         ['transform-imports', {
