@@ -59,10 +59,10 @@
                   <v-card-text>
                     <ul class="body-2">
                       <li class="subheading">Arduino 开发入门</li>
-                      <b>授课老师：</b>王银申老师,浙江大学机械电子工程系硕士，浙江省科协开放实验室资深教练<br/>
+                      <b>授课老师：</b>楼学庆老师,浙江大学机械电子工程系硕士，浙江省科协开放实验室资深教练<br/>
                       <b>授课内容：</b>Arduino 的基础硬件知识、传感器和Wi-Fi模块的调用，C 语言程序设计。最终会带领大家完成一个手机端与Arduino互动的实战。
                       <li class="subheading">移动互联网应用开发</li>
-                      <b>授课老师：</b>楼学庆老师,浙江大学副教授、高级工程师。<br/>
+                      <b>授课老师：</b>王银申老师,浙江大学副教授、高级工程师。<br/>
                       <b>授课内容：</b>以互联网为中心的Java程序设计，包括爬虫，socket实时通信等。每节课都会带同学们完成一个完整的项目，在实践中教授基本语法和框架的使用，即使是零基础的同学也毫无压力。<a class="blue--text" href="https://github.com/Bruceshark/hackon_workshop_1">授课内容 Github</a>
                       <li class="subheading">产品设计与需求管理</li>
                       <b>授课老师：</b>彭鑫老师,淘宝技术部-基础平台部-PMO&技术品牌-淘宝PMO，项目管理专家。<br/>

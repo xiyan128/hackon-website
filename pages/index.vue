@@ -167,12 +167,6 @@
             <v-flex>
               <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/2a1a21c5271eef791dae.png" class="logo">
             </v-flex>
-            <v-flex>
-              <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/b5f7d863c29e1963481e.png" class="logo">
-            </v-flex>
-            <v-flex>
-              <img src="http://lc-yh97DhYm.cn-n1.lcfile.com/16b46b96f0a82ae13df6.png" class="logo">
-            </v-flex>
           </v-layout>
         </v-card-text>
         <v-card-title primary-title class="layout justify-center">
